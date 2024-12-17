@@ -1,0 +1,319 @@
+ /* .headline{
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px blue solid;
+    color:whitesmoke ;
+    background-color: rgb(17, 8, 67);
+    margin-top: 0px;
+    margin-bottom: 10px;    
+}
+.login{
+    display: inline-block;
+}
+.text{
+    display: block;
+    font-size:17px;
+    margin-bottom:  10px;
+    width: 450px;
+}
+.password{
+    display: block;
+    font-size: 17px;
+    margin-bottom: 10px;
+    width: 450px;
+}
+.forgot{
+    display:block;
+    font-size: 18px;
+    margin-bottom: 80px;
+   margin-left: 166px;
+   margin-top: 0px;
+    
+   
+    
+}
+.btn{
+    background-color: rgb(23, 210, 26);
+    border-radius: 3px;
+    height: 36px;
+    width: 458px;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-color: greenyellow;
+    box-shadow: 1px 1px 1px ;
+    margin-bottom: 150px;
+  
+}
+#whole{
+ background-color: aliceblue; 
+     border:1px rgba(12, 2, 17, 0.712) solid; 
+     display: inline-block; 
+    position: absolute;
+    right: 428px;
+    box-shadow: 1px 1px 1px 1px ;
+    opacity: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    display: none;
+    
+    
+}
+.info{
+    color: black; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    background-color: aquamarine;
+    
+    
+}
+h4{
+    margin-top: 0px;
+    color: red;
+    margin-bottom: 0px; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    
+    
+    
+}
+body{
+    margin-top: 0px;
+    margin-left: 0.5px;
+    margin-right: 0px;
+    background:url(save.png);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+} */
+/* .rens{
+    display: flex;
+  justify-content:space-between ;
+  align-items: center;
+  background-color:aqua;
+}
+a:hover{
+    color:red;
+}
+a:active{
+    color:green
+}
+.au{ 
+    background-color: rgba(111, 33, 185, 0.68);
+    height: 45px;
+    width :60px;
+    border-radius:6px;
+    margin-right: 0.3px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 1px 1px 1px;
+   transition: box-shadow 1s;
+   display: inline-block;
+}
+.button-container{
+    gap: 20px;
+    display: flex;
+   
+}
+.sesss{
+        display: inline-block;
+        font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px; text-decoration: none;
+            color: #4285F4;
+            font-size: 18px;
+            margin-top: 20px;
+}  */
+  /* General Page Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(save.png);
+ 
+}
+
+h1, h4 {
+    margin: 0;
+    text-align: center;
+    
+}
+
+h4 {
+    font-size: 1.8rem;
+    color: red;
+}
+
+/* Container Styling */
+.rens {
+    text-align: center;
+    padding: 30px;
+    background-color: #2c3e50;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+
+.button-container {
+    margin-top: 15px;
+}
+
+button.au {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+button.au:hover {
+    background-color: #2980b9;
+}
+
+/* Admin Panel Styling */
+#whole {
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+    display: none;
+    margin-left: 30px;
+    height: 500px;
+}
+
+.login {
+    margin-bottom: 20px;
+}
+
+.headline {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.infos {
+    text-align: left;
+}
+
+.infos b {
+    font-size: 1rem;
+    color: #34495e;
+}
+
+.text, .password {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #bdc3c7;
+    box-sizing: border-box;
+}
+
+.text:focus, .password:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.2);
+}
+
+button.btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button.btn:hover {
+    background-color: #2980b9;
+}
+
+a.forgot {
+    display: block;
+    margin-top: 15px;
+    color: #3498db;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+a.forgot:hover {
+    text-decoration: underline;
+    color: red;
+}
+a.forgot:active{
+    color: green;
+}
+
+/* Create Account Link */
+.sesss {
+    margin-top: 20px;
+}
+
+.sesss p {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+.sesss a {
+    color: #3498db;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.sesss a:hover {
+    text-decoration: underline;
+    color: red;
+}
+.sesss a:active{
+    color: green;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #whole {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    h4 {
+        font-size: 1.4rem;
+    }
+}
+.cancel-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    color: #34495e;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.cancel-btn:hover {
+    color: red;
+}
+

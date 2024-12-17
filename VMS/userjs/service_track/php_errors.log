@@ -1,0 +1,7 @@
+[15-Dec-2024 18:59:36 Europe/Berlin] PHP Warning:  include(../../connection.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\VMS\userjs\service_track\fetch_items.php on line 7
+[15-Dec-2024 18:59:36 Europe/Berlin] PHP Warning:  include(): Failed opening '../../connection.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\VMS\userjs\service_track\fetch_items.php on line 7
+[15-Dec-2024 18:59:36 Europe/Berlin] PHP Warning:  Undefined variable $admin_conn in C:\xampp\htdocs\VMS\userjs\service_track\fetch_items.php on line 48
+[15-Dec-2024 18:59:36 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function close() on null in C:\xampp\htdocs\VMS\userjs\service_track\fetch_items.php:48
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\VMS\userjs\service_track\fetch_items.php on line 48

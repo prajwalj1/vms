@@ -1,0 +1,229 @@
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #f9fafc;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 250px;
+  background-color: #1e293b;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 23px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+
+}
+
+.sidebar ul li {
+  margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #cbd5e1;
+  font-size: 15px;
+  padding: 10px 15px;
+  display: block;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.sidebar ul li a.active,
+.sidebar ul li a:hover {
+  background-color: #64748b;
+  color: #fff;
+}
+
+/* Main Content Styling */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  position: relative;
+  overflow-y: auto;
+}
+
+/* Header Styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+}
+
+#username {
+  margin-right: 15px;
+  font-size: 1rem;
+}
+
+#logout-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#logout-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Dashboard Overview Styling */
+.dashboard-overview {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: baseline;
+  height: 100%;
+}
+
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+.card p {
+  font-size: 2rem;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.modal-content .btn-confirm,
+.modal-content .btn-cancel {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.modal-content .btn-confirm {
+  background-color: #27ae60;
+  color: white;
+  margin-right: 10px;
+}
+
+.modal-content .btn-confirm:hover {
+  background-color: #219653;
+}
+
+.modal-content .btn-cancel {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.modal-content .btn-cancel:hover {
+  background-color: #c0392b;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .sidebar h2 {
+    font-size: 1.2rem;
+  }
+
+  .dashboard-cards {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  #logout-btn {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+}
